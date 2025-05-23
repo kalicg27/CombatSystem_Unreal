@@ -22,34 +22,34 @@ void print_stack(stack<string> s){
 }
 
 int main(){
-    //pair<int, int>
-    // pair<int, int> pos_elm = {3,6};
-    // cout << "X: "<<pos_elm.first<< ", Y: "<<pos_elm.second<<endl;
+    // pair<int, int>
+    pair<int, int> pos_elm = {3,6};
+    cout << "X: "<<pos_elm.first<< ", Y: "<<pos_elm.second<<endl;
 
-    // // vectors(1container)
-    // vector<int> scores;
-    // scores.push_back(50);
-    // scores.push_back(444);
-    // scores.push_back(45);
-    // scores.push_back(454433);
-    // int player;
-    // for (int i = 0; i<scores.size(); i++){
-    //     player = i+1;
-    //     cout <<"Player "<<player<<" value is "<< scores[i]<<endl;
+    // vectors(1container)
+    vector<int> scores;
+    scores.push_back(50);
+    scores.push_back(444);
+    scores.push_back(45);
+    scores.push_back(454433);
+    int player;
+    for (int i = 0; i<scores.size(); i++){
+        player = i+1;
+        cout <<"Player "<<player<<" value is "<< scores[i]<<endl;
         
+    }
+    // for (int i: scores){
+    //     cout << "all: "<<i<< endl;
     // }
-    // // for (int i: scores){
-    // //     cout << "all: "<<i<< endl;
-    // // }
-    // int topScore = scores[0];
-    // int topPlayer = 1;
-    // for (int i=1; i<scores.size();i++){
-    //     if (scores[i]> topScore){
-    //         topScore = scores[i];
-    //         topPlayer = i+1; 
-    //     }
-    // }
-    // cout << "Top score of the game is player number: "<<topPlayer<<" with score of: "<<topScore<< endl;
+    int topScore = scores[0];
+    int topPlayer = 1;
+    for (int i=1; i<scores.size();i++){
+        if (scores[i]> topScore){
+            topScore = scores[i];
+            topPlayer = i+1; 
+        }
+    }
+    cout << "Top score of the game is player number: "<<topPlayer<<" with score of: "<<topScore<< endl;
 
 
     //iterations
